@@ -2,7 +2,7 @@ import "./style.css";
 
 import { Sortable } from "@shopify/draggable";
 
-fetch("./items.json")
+fetch("/items.json")
   .then((response) => response.json())
   .then((items) => {
     const container = document.querySelector("#container2");
