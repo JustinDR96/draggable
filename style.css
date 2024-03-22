@@ -39,3 +39,6 @@ body {
   border-radius: 10px;
   cursor: pointer;
 }
+.item:active {
+  background-color: purple;
+}

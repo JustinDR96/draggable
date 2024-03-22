@@ -34,4 +34,9 @@ fetch("/items.json")
       console.log("sortable:stop");
       document.body.style.cursor = "default";
     });
+
+    sortable.on("drag:start", (event) => {
+      event.data.source.style.backgroundColor = "black";
+      event.data.source.style.color = "#fff";
+    });
   });
